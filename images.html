@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+        #info{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="oppenhiemer.jpg" width="1000vw" alt="This is alternative text, image couldn't be loaded. oppenhiemer image was here"> -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet doloremque rem magni nam, soluta sed tempora omnis maiores ullam corrupti? Architecto, officia iure. Quas accusamus qui placeat ipsam nulla, aperiam assumenda optio quod dolores quibusdam beatae. Ad vitae mollitia animi. Numquam dicta alias quidem placeat, quibusdam repudiandae nobis non! Pariatur eligendi optio ullam cupiditate accusantium laboriosam molestiae similique ex vel beatae quas consequuntur sint minima reiciendis, maxime qui doloremque distinctio dolorum! Non dicta at cum architecto officia autem ex est, repudiandae doloremque sit unde consequuntur? Eligendi, dolorum? Sequi adipisci tempore voluptates praesentium iure ipsum consectetur repudiandae voluptatum necessitatibus, iste nulla atque porro! Sint quia magni maiores voluptates, tempora culpa cum? Dolor architecto ullam maxime? Iste aliquam rem cum corrupti magni earum incidunt laborum, necessitatibus facere exercitationem tempore facilis eius assumenda cupiditate quis porro omnis. Iusto facilis dolores incidunt quisquam. Officia, culpa illum. Ipsa sed quis fuga eos voluptas ipsum, minus nesciunt blanditiis suscipit numquam nostrum debitis a hic autem libero dolorem impedit quae illo modi. Sint iure eaque perspiciatis eos eligendi culpa molestias omnis fugiat officia dolores, enim molestiae ullam illum consequatur architecto voluptatem, rem in, sed corporis nam. Fugiat dolorum consequatur, in quam quibusdam reiciendis aliquam. Odit, magnam blanditiis!</p>
+    <h3 id="info">Info about the page</h3>
+    <p id="info">This page about how images can be displayed on the webpage. Picture tag is used when we want users to see different things on different size of screens. If the device's screen size is large first image with the more pixles will bw loaded</p>
+    <picture>
+        <source media="(min-width: 650px)" srcset="./oppenhiemer.jpg" />
+        <source media="(min-width: 450px)" srcset="./ship.jpg" />
+        <img src="./oppenhiemer.jpg" width="50%" alt="NoImageFound">
+    </picture>
+    <p id="info">...and this works.</p>
+    <img src="oppenhiemer.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="man" href="./ship.jpg" coords="1767,1841,2140,780" shape="rect">
+</map>
+    <script>
+        function one(){
+            alert("You clicked man");
+        }
+        function two(){
+            alert("You clicked two");
+        }
+    </script>
+
+</body>
+</html>

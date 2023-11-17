@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            color: #868585;
+
+        }
+        td, th{
+            border:1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h3>Learning about tables</h3>
+    <p>Shortcut to create table with multiple rows and table headings: table>tr>th*3<br /> Output is:</p>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@gmail.com</td>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td>US</td>
+            <td>usagmail@.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>jp@gmail.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CN</td>
+            <td>cn@gmail.com</td>
+        </tr>
+    </table><BR />
+<h3>Second Table</h3>
+
+    <p>The values of this table has been rearranged. The Table headings are taken to the left side of the table. Colspan and rowspan of country cell has been set to 2.</p>
+    <table style="width: 50%">
+        <tr>
+            <th colspan="2" rowspan="2">Country</th>
+            <td>India</td>
+            <td>United States</td>
+            <td>Japan</td>
+            <td>China</td>
+        </tr>
+        <tr>
+            <th>Country Code</th>
+            <td>IN</td>
+            <td>US</td>
+            <td>JP</td>
+            <td>CN</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>india@gmail.com</td>
+            <td>us@gmail.com</td>
+            <td>jp@gmail.com</td>
+            <td>cn@gmail.com</td>
+        </tr>
+    </table>
+</body>
+</html>
